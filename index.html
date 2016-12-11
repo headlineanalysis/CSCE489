@@ -23,7 +23,7 @@
     <section class="main-content">
       <h1>
 <a id="Introduction" class="anchor" href="#headline-analysis-project" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Introduction</h1>
-       <h2>Overview and Motivation:</h2>
+       <h2>Overview and Motivation</h2>
       <p>Every day we're greeted with new stories in the news, but how have the headlines themselves changed over time?
         We set out to uncover trends in the way that headlines are written to better understand the effects of war,
         technology and (....) on our news. We wanted to find interesting trends in the headlines over the time, and see
@@ -35,21 +35,22 @@
         and apply it to find some interesting facts about headlines over time.<p>
 
 
-      <h2>Initial Questions:</h2>
+      <h2>Initial Questions</h2>
       <p>Some of the initial questions that we asked are:  Are the headlines become harder or easier to read?
         In what time period do the headlines have the most question marks?  In what time period are the  headlines changing
-        from all Caps to lowercase ? Are the people in the 2nd industrial revolution readability score becoming higher or is
+        from all Caps to lowercase ? Are the people in the 2nd industrial revolution affecting readability score (becoming higher) or is
         there any relation?<p>
       <h2>Exploratory Data Analysis</h2>
-      <p>We used various visualizations to represent our findings. Some include line graphs, scatter plots, and color map feature.
-      These plots were useful to visualize the answers to our questions. We used New York Times API to collect headlines from news
-      articles. We collected around 13 million articles, ranging from the year 1882-2016, to show our analysis of headlines in the
-      news articles over the time period. Since our analysis has been conducted on a large dataset,
-      we kept our visuals simple, so it is easier for someone to understand the analysis.<p>
+      <p>We used various visualizations to represent our findings. These include line graphs, scatter plots and a color map feature.
+        The plots were useful to visualize the answers to our questions. We used the New York Times API to collect headlines from 
+        news articles, of which we collected around 13 million in total. The analyzed articles range from 1882 to 2016. The very
+        large nature of our dataset required the Team to extract and transform our data in a manner which could be easily loaded
+        once stored. The voluminous size could was often a burden during analysis, and required significant computation time. 
+        Lastly, we kept our visuals simple, so it is easier for someone to understand the analysis.<p>
 
       <h2>Final Analysis!</h2>
 
-        <h3>The '?' Analysis:</h3>
+        <h3>The '?' Analysis</h3>
           <p>Clickbait headlines are slowly becoming norm for headlines. They are used to get clicks with nothing more than just
             a creative way of spinning what could be a mundane topic. The ‘?’ at the end of the headlines prompt the user to click them,
             and find out the content. We were interested in finding how the use of ‘?’ has changed
@@ -57,9 +58,12 @@
             <img class="full" src="question-marks.png">
 
          <p>As you can see in the graph above, the occurrence of ‘?’ in the headlines has drastically increased.
-           From 1882-1960, the use of ‘?’ in headlines is pretty linear, but it slowly starts picking up after 1960.
-           One interesting thing we noticed, that there was a sheer drop in the use of ‘?’ in the headlines from 2005-2006,
-           but after the year 2007, the use of ‘?’ in the headlines saw an exponential growth.<p>
+           From 1882-1960, the use of ‘?’ in headlines is pretty linear, but there is a rapid increase in the use of '?' over
+           the last 30 years. It seems like the writers are trying to grab attention by ending a headline with a '?'Do the
+           writers do it intentionally to lure a user to read their article? Well it is difficult to answer these questions, but it 
+           is fair enough to say that from the graph above, the use of '?' in the article headlines has increased tremendously over the
+           years.
+           <p>
 
       <h3>Percent All CAPS</h3>
       <img class="full" src="percent-all-caps.png">
@@ -69,13 +73,14 @@
         It seemed that  the usage of caps became less important in the early 2000 . Then it increased again and
         decline as the years went by.<p>
 
-      <h3>Flesch Reading Ease Per Year:</h3>
+      <h3>Flesch Reading Ease Per Year</h3>
       <img class="full" src="flesch-reading.png">
 
       The flesh reading ease is a function in the textstat library in python.
       It analyses the level of education that a person would need in order to read or understand what it is saying.
       If you look at the graph it peak’s in 1900 with high 70 score. That means that an 8th and 9th grader would be able to
-      read the headlines on average.
+      read the headlines on average. From the visual above it is fair to say that the headlines have become easier to read,
+      compared to the headlines in the past.
 
 
       <h3>New York Times Mentions Itself!!</h3>
@@ -86,7 +91,7 @@
       but a drastic increase can be noticed after 2007.<p>
       <img class="full" src="nyt-mentions-itself.png">
 
-      <h3>Conclusion:</h3>
+      <h3>Conclusion</h3>
 
       <p>The most drastic conclusion is that headlines are now significantly more likely to include a question! Perhaps this means
          that writers are trying harder to catch a possible readers attention. This is not an unlikely possibility, as competition
